@@ -37,10 +37,7 @@ function Posts() {
   );
 }
 
-
 function Post(props) {
-
-
   const [like, setLike] = React.useState("heart-outline");
 
   return (
