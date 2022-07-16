@@ -30,7 +30,7 @@ function Posts() {
           img={postInfo.img}
           imgLike={postInfo.imgLike}
           usernameLike={postInfo.usernameLike}
-          totaLikes={postInfo.totalLikes}
+          totalLikes={postInfo.totalLikes}
         />
       ))}
     </div>
