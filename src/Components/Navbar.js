@@ -1,9 +1,9 @@
 import Navbarlogo from "../Components/Navbarlogo";
-import NavbarlogoMobile from "../Components/NavbarlogoMobile";
-import Instagrammobile from "../Components/Instagrammobile";
+import NavbarlogoMobile from "../Components/Mobile/NavbarlogoMobile";
+import Instagrammobile from "../Components/Mobile/Instagrammobile";
 import Pesquisa from "../Components/Pesquisa";
 import Icones from "../Components/Icones";
-import Iconesmobile from "../Components/Iconesmobile";
+import Iconesmobile from "../Components/Mobile/Iconesmobile";
 
 function Navbar(){
     return (
@@ -18,7 +18,6 @@ function Navbar(){
                     <Pesquisa />
                     
                     <Icones />
-                    
                     <Iconesmobile />
                     
                 </div>

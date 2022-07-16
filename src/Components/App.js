@@ -1,6 +1,6 @@
 import Navbar from "../Components/Navbar";
 import Corpo from "../Components/Corpo";
-import Fundomobile from "../Components/Fundomobile";
+import Fundomobile from "../Components/Mobile/Fundomobile";
 
 function App() {
     return (

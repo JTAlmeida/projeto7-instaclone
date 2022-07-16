@@ -1,3 +1,5 @@
+import React from "react";
+
 const post = [
   {
     userImg: "assets/img/meowed.svg",
@@ -17,7 +19,11 @@ const post = [
   },
 ];
 
+
+
 function Posts() {
+  const [like, setLike] = React.useState("heart-outline");
+
   return (
     <div class="posts">
       {post.map((post) => (
@@ -38,8 +44,16 @@ function Posts() {
 
           <div class="fundo">
             <div class="acoes">
-              <div>
-                <ion-icon name="heart-outline"></ion-icon>
+              <div class="like">
+                <ion-icon name={like} 
+                onClick={() => {
+                  if(like==="heart-outline"){
+                    setLike("heart");
+                  } else {
+                    setLike("heart-outline");
+                  }
+                }}>
+                </ion-icon>
                 <ion-icon name="chatbubble-outline"></ion-icon>
                 <ion-icon name="paper-plane-outline"></ion-icon>
               </div>

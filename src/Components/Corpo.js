@@ -1,4 +1,4 @@
-import Left from "../Components/Left";
+import Left from "../Components/Esquerda";
 import Sidebar from "../Components/Sidebar";
 
 function Corpo() {
