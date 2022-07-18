@@ -1,14 +1,12 @@
-import Left from "../Components/Esquerda";
+import Esquerda from "../Components/Esquerda";
 import Sidebar from "../Components/Sidebar";
 
-function Corpo() {
+export default function Corpo() {
     return (
         <div class="corpo">
-            <Left />
+            <Esquerda />
             
             <Sidebar />
         </div>
     )
 }
-
-export default Corpo;

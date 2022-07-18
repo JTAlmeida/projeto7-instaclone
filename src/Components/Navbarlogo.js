@@ -1,4 +1,4 @@
-function Navbarlogo(){
+export default function Navbarlogo(){
     return (
         <div class="logo">
                         <ion-icon name="logo-instagram"></ion-icon>
@@ -8,5 +8,3 @@ function Navbarlogo(){
                     
     )
 }
-
-export default Navbarlogo;

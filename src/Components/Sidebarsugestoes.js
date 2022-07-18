@@ -24,7 +24,7 @@ const sugestao = [
   },
 ];
 
-function Sidebarsugestoes() {
+export default function Sidebarsugestoes() {
   return (
     <div class="sugestoes">
       <div class="titulo">
@@ -33,20 +33,24 @@ function Sidebarsugestoes() {
       </div>
       
       {sugestao.map((sugestao) => (
-        <div class="sugestao">
-          <div class="usuario">
-            <img src={sugestao.img} />
-            <div class="texto">
-              <div class="nome">{sugestao.nome}</div>
-              <div class="razao">{sugestao.razao}</div>
-            </div>
-          </div>
-          <div class="seguir">Seguir</div>
-        </div>
+        <Sugestao img = {sugestao.img} nome = {sugestao.nome} razao = {sugestao.razao} />
       ))}
       
     </div>
   );
 }
 
-export default Sidebarsugestoes;
+function Sugestao(props){
+  return (
+    <div class="sugestao">
+          <div class="usuario">
+            <img src={props.img} />
+            <div class="texto">
+              <div class="nome">{props.nome}</div>
+              <div class="razao">{props.razao}</div>
+            </div>
+          </div>
+          <div class="seguir">Seguir</div>
+        </div>
+  )
+}

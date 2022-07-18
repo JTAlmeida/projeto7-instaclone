@@ -1,7 +1,7 @@
 import Sidebarusuario from "../Components/Sidebarusuario"
 import Sidebarsugestoes from "../Components/Sidebarsugestoes"
 
-function Sidebar() {
+export default function Sidebar() {
     return (
         <div class="sidebar">
             <Sidebarusuario />
@@ -18,5 +18,3 @@ function Sidebar() {
         </div>
     )
 }
-
-export default Sidebar;

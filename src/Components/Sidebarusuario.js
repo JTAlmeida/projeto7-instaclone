@@ -1,17 +1,17 @@
-const usuario = [{ username: "catanacomis", name: "Catana" }];
-
-function Sidebarusuario() {
+export default function Sidebarusuario() {
   return (
     <div class="usuario">
       <img src="assets/img/catanacomics.svg" />
-      {usuario.map((usuario) => (
-        <div class="texto">
-          <strong>{usuario.username}</strong>
-          {usuario.name}
-        </div>
-      ))}
+      <Usuario username = "catanacomics" name = "Catana"/>
     </div>
   );
 }
 
-export default Sidebarusuario;
+function Usuario(props){
+  return (
+    <div class="texto">
+          <strong>{props.username}</strong>
+          {props.name}
+        </div>
+  )
+}

@@ -5,7 +5,7 @@ import Pesquisa from "../Components/Pesquisa";
 import Icones from "../Components/Icones";
 import Iconesmobile from "../Components/Mobile/Iconesmobile";
 
-function Navbar(){
+export default function Navbar(){
     return (
         <div class="navbar">
                 <div class="container">
@@ -24,5 +24,3 @@ function Navbar(){
             </div>
     )
 }
-
-export default Navbar;

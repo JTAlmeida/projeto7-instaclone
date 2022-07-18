@@ -4,7 +4,8 @@ const icones = [
   "heart-outline",
   "person-outline",
 ];
-function Icones() {
+
+export default function Icones() {
   return (
     <div class="icones">
       {icones.map((icones) => (
@@ -13,5 +14,3 @@ function Icones() {
     </div>
   );
 }
-
-export default Icones;

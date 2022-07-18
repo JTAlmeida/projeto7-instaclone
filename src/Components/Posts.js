@@ -19,7 +19,7 @@ const postInfo = [
   },
 ];
 
-function Posts() {
+export default function Posts() {
 
   return (
     <div class="posts">
@@ -53,7 +53,13 @@ function Post(props) {
       </div>
 
       <div class="conteudo">
-        <img src={props.img} />
+        <img src={props.img} onClick={() => {
+                if (like === "heart-outline") {
+                  setLike("heart");
+                } else {
+                  setLike("heart-outline");
+                }
+              }}/>
       </div>
 
       <div class="fundo">
@@ -89,4 +95,4 @@ function Post(props) {
   );
 }
 
-export default Posts;
+

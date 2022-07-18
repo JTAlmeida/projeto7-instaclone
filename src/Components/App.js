@@ -2,7 +2,7 @@ import Navbar from "../Components/Navbar";
 import Corpo from "../Components/Corpo";
 import Fundomobile from "../Components/Mobile/Fundomobile";
 
-function App() {
+export default function App() {
     return (
         <div>
             <Navbar />
@@ -13,5 +13,3 @@ function App() {
         </div>
     )
 }
-
-export default App;

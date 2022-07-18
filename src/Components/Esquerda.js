@@ -1,7 +1,7 @@
 import Stories from "./Stories";
 import Posts from "./Posts";
 
-function Esquerda (){
+export default function Esquerda (){
     return (
     <div class="esquerda">
         <Stories />
@@ -10,5 +10,3 @@ function Esquerda (){
     </div>
     )
 }
-
-export default Esquerda;

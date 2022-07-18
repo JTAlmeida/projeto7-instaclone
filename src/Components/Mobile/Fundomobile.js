@@ -6,7 +6,7 @@ const ionIcon = [
   "person-outline",
 ];
 
-function Fundomobile() {
+export default function Fundomobile() {
   return (
     <div class="fundo-mobile">
       {ionIcon.map((ionicon) => (
@@ -15,5 +15,3 @@ function Fundomobile() {
     </div>
   );
 }
-
-export default Fundomobile;
